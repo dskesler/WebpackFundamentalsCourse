@@ -14,6 +14,10 @@ module.exports = {
 	},
 
 	module: {
+        preLoaders: [
+            // Javascript
+            { test: /\.jsx?$/, loader: 'eslint', exclude: /node_modules/ }
+        ],
 		loaders: [
 			{
 				test: /\.css$/,
